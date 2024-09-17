@@ -1,13 +1,36 @@
 .about-section {
-    padding: 4vh;
+    padding-left: 4vh;
+    padding-left: 4vh;
+    padding-top: 2vh;
     background-color: #393E46;
     color: #fff;
 }
 
-.about-title {
-    font-size: 3rem;
+.about-title{
     color: #fff;
     font-weight: bold;
+    position: relative;
+    display: inline-block; /* Ensures the line matches the text width */
+}
+
+.about-title::after {
+    content: '';
+    display: block;
+    width: 60%; /* Line width matches the text width */
+    height: 5px; /* Line thickness */
+    background-color: #D65A31; /* Orange line color */
+    margin-top: 10px; /* Space between text and the line */
+}
+.about-title::before {
+    content: '';
+    display: block;
+    width: 40%; /* White line smaller than the orange line */
+    height: 5px; /* White line thickness */
+    background-color: #fff; /* White line color */
+    position: absolute;
+    bottom: -8px; /* Position the white line directly below the orange line */
+    left: 20%; /* Center align the white line */
+    transform: translateX(-50%); /* Center the white line under the orange one */
 }
 
 .about-sub-title {
@@ -41,7 +64,7 @@
     /* Ensures content doesn’t overflow */
     height: 100%;
     /* Ensures equal height in flexbox layout */
-
+    margin-right: 25px;
 }
 
 .section-title {
@@ -49,16 +72,23 @@
     color: #fff;
     margin-bottom: 15px;
     padding-bottom: 10px;
-    text-decoration: underline;
-    text-decoration-color: #D65A31;
 }
-
+ .section-title::after {
+    content: '';
+    display: block;
+    width: 100%; /* Line width matches the text width */
+    height: 5px; /* Line thickness */
+    background-color: #D65A31; /* Orange line color */
+    margin-top: 10px; /* Space between text and the line */
+}
+.personal-details{
+    margin-top: 40px;
+}
 .personal-details p {
     font-size: 1.1rem;
-    margin-bottom: 10px;
     font-weight: bold;
     border-bottom: 2px solid #fff;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 
 .education-details-para {
@@ -78,7 +108,6 @@
 
 .box li {
     position: relative;
-    /* Allows absolute positioning of bullets */
     padding-left: 25px;/* Space for the bullet */
     margin-bottom: 15px;/* Space between list items */
 }
@@ -94,4 +123,12 @@
     height: 2.2vh;/* Adjust size of the bullet */
     border-radius: 50%;/* Makes the bullet round */
     background-color: #D65A31;/* Bullet color */
+}
+/* Scrollable button functionality for the unordered list */
+.box ul {
+    max-height: 34vh; /* Set max height for the scrollable area */
+    overflow-y: auto;  /* Add vertical scrolling */
+    list-style-type: none; /* Removes default bullets */
+    padding-left: 0; /* Removes default padding */
+    scrollbar-width: thin; 
 }
