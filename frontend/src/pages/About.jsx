@@ -58,8 +58,8 @@ function About() {
                 </div>
 
                 <div className="col-md-4 mb-4">
-                    <div className="box education-details">
-                        <h3 className="section-title">Education</h3>
+                <div className="box education-details">
+                        <h3 className="section-title">Project</h3>
                         <ul>
                             <li>
                                 <p><strong><FaRegCalendarDays />2024</strong></p>
