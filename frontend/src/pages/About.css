@@ -131,4 +131,14 @@
     list-style-type: none; /* Removes default bullets */
     padding-left: 0; /* Removes default padding */
     scrollbar-width: thin; 
+    scrollbar-color: #D65A31 #393E46 ; /* For Firefox */
+}
+
+.box ul::-webkit-scrollbar-thumb {
+    background-color: #393E46 ; /* Dark gray thumb */
+    border-radius: 10px; /* Round the thumb edges */
+}
+
+.box ul::-webkit-scrollbar-track {
+    background-color: #D65A31; /* Orange track */
 }
