@@ -1,0 +1,144 @@
+.about-section {
+    padding-left: 4vh;
+    padding-left: 4vh;
+    padding-top: 2vh;
+    background-color: #393E46;
+    color: #fff;
+}
+
+.about-title{
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    display: inline-block; /* Ensures the line matches the text width */
+}
+
+.about-title::after {
+    content: '';
+    display: block;
+    width: 60%; /* Line width matches the text width */
+    height: 5px; /* Line thickness */
+    background-color: #D65A31; /* Orange line color */
+    margin-top: 10px; /* Space between text and the line */
+}
+.about-title::before {
+    content: '';
+    display: block;
+    width: 40%; /* White line smaller than the orange line */
+    height: 5px; /* White line thickness */
+    background-color: #fff; /* White line color */
+    position: absolute;
+    bottom: -8px; /* Position the white line directly below the orange line */
+    left: 20%; /* Center align the white line */
+    transform: translateX(-50%); /* Center the white line under the orange one */
+}
+
+.about-sub-title {
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.about-title-highlight {
+    color: #D65A31;
+}
+
+.about-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    background-color: #222831;
+    padding: 20px;
+    /* border-radius: 8px; */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /* Ensures content doesn’t overflow */
+    height: 100%;
+    /* Ensures equal height in flexbox layout */
+    margin-right: 15px;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+ .section-title::after {
+    content: '';
+    display: block;
+    width: 100%; /* Line width matches the text width */
+    height: 5px; /* Line thickness */
+    background-color: #D65A31; /* Orange line color */
+    margin-top: 10px; /* Space between text and the line */
+}
+.personal-details{
+    margin-top: 40px;
+}
+.personal-details p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 40px;
+}
+
+.education-details-para {
+    font-size: 0.8rem;
+    padding-left: 25px;/* Space for the bullet */
+    margin-bottom: 15px;/* Space between list items */
+}
+.education-details-title{
+    padding-left: 25px; /* Space for the bullet */
+    margin-bottom: 15px; /* Space between list items */
+}
+/* Style for unordered list */
+.box ul {
+    list-style-type: none;/* Removes default bullets */
+    padding-left: 0; /* Removes default padding */
+}
+
+.box li {
+    position: relative;
+    padding-left: 25px;/* Space for the bullet */
+    margin-bottom: 15px;/* Space between list items */
+}
+
+/* Custom  bullets for education entries */
+.box li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.2vh;/* Adjust size of the bullet */
+    height: 2.2vh;/* Adjust size of the bullet */
+    border-radius: 50%;/* Makes the bullet round */
+    background-color: #D65A31;/* Bullet color */
+}
+/* Scrollable button functionality for the unordered list */
+.box ul {
+    max-height: 34vh; /* Set max height for the scrollable area */
+    overflow-y: auto;  /* Add vertical scrolling */
+    list-style-type: none; /* Removes default bullets */
+    padding-left: 0; /* Removes default padding */
+    scrollbar-width: thin; 
+    scrollbar-color: #D65A31 #393E46 ; /* For Firefox */
+}
+
+.box ul::-webkit-scrollbar-thumb {
+    background-color: #393E46 ; /* Dark gray thumb */
+    border-radius: 10px; /* Round the thumb edges */
+}
+
+.box ul::-webkit-scrollbar-track {
+    background-color: #D65A31; /* Orange track */
+}
