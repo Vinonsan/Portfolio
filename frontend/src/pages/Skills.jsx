@@ -6,7 +6,7 @@ const Skills = () => {
     <div className="container-flex skills-section">
       <h2 className="skills-title">
         My <span className="skills-highlight">skills</span>
-      </h2>
+      </h2>hii
       {/* Row to hold the columns */}
       <div className="row">
         <div className="skills-container">
