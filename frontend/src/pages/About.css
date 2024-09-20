@@ -64,7 +64,7 @@
     /* Ensures content doesn’t overflow */
     height: 100%;
     /* Ensures equal height in flexbox layout */
-    margin-right: 25px;
+    margin-right: 15px;
 }
 
 .section-title {
