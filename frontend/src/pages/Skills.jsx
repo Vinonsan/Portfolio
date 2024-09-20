@@ -5,8 +5,8 @@ const Skills = () => {
   return (
     <div className="container-flex skills-section">
       <h2 className="skills-title">
-        My <span className="skills-highlight">skills</span>
-      </h2>hii
+        My <span className="skills-highlight">skills</span>hiiii
+      </h2>
       {/* Row to hold the columns */}
       <div className="row">
         <div className="skills-container">
