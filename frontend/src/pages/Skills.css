@@ -81,6 +81,5 @@
 }
 .skill-name-line-container {
   display: flex;
-  flex-direction: column; /* Stack the name and line vertically */
   margin-left: 15px; /* Adjust spacing between icon and name */
 }
